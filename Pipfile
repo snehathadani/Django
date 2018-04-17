@@ -4,9 +4,12 @@ name = "pypi"
 verify_ssl = true
 
 [dev-packages]
+pylint = "*"
 
 [packages]
 django = "*"
+djangorestframework = "*"
+graphene-django = "*"
 
 [requires]
 python_version = "3.4"
