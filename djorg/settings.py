@@ -25,7 +25,7 @@ SECRET_KEY = 'nqc&$%oez(r)r!j$=n-$ix(!nry$1aj$k+z$3l4gz2^w_gwo6^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = config['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
 
 
 # Application definition
@@ -37,10 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #3rd party apps
-    'bootstrap4'
-    //ourAPPS
-    'bookmarks',
+   
+    #ourAPPS
+    'bookmarks.apps.BookmarksConfig'
     ]
 
 MIDDLEWARE = [
